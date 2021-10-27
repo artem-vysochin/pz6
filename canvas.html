@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/canvas.css">
+   <script defer src="assets/js/all.js"></script>
+
+   <script src="assets/js/canvas.js"></script> 
+
+   <script>
+       window.onload = function() {
+
+           canvas('#draw', {
+             width: 500,
+             height: 300,
+             strokeWidth: 5,
+             strokeColor: "#df4b26"
+         })
+       }
+   </script>
+
+</head>
+<body>
+    <header class="header">
+        <img src="assets/img/1.jpg" height="60px" width="60px" align="right">
+        <p>Header...</p>
+    </header> 
+    <div class="container">
+       <main class="center column">
+           <article>
+               <h1>Canvas</h1>
+               <p></p>
+               <canvas id="draw"></canvas>
+               <div class="toolbar" id="toolbar">
+                <button class="btn" id="save"><i class="far fa-save"></i>
+
+                </button>
+                <button class = "btn" id = "time1"><i class="far fa-clock"></i>
+
+                </button>
+                <button class = "btn" id = "cntx"><i class="fas fa-file-download"></i>
+
+                </button>
+                <button class = "btn" id = "restore"><i class="fas fa-file-export"></i>
+
+                </button>
+
+                <input type="color" id="color-picker" />
+                <p>Enter width of brush</p>
+                <input type="text" id="brush">
+                <br>
+                <p>Url for background</p>
+                <input type="text" id="img">
+
+            </div>
+
+
+        </article>
+    </main>
+    <nav class="left column">
+       <h3>Left heading</h3>
+       <ul>
+           <li><a href="#">Link 
+               <h3>Left heading</h3>
+               <ul>
+                   <li><a href="index.html">Header</a></li>
+                   <li> <a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li> <a href="media.html">Media</a></li>
+                   <li> <a href="slider.html">Slider</a></li>
+                   <li> <a href="table.html">Table</a></li>
+               </ul>
+           </nav>
+           <div class="right column">
+               <h3>Right heading</h3>
+               <p></p>
+           </div>
+           <div class="push"></div>
+       </div>
+       <div class="footer-wrapper">
+           <footer class="footer">
+             <img src="assets/img/1.jpg" height="60px" width="60px" align="right">
+             <p>Footer...</p>
+         </footer>
+     </div>
+ </body> 
+ </html>
